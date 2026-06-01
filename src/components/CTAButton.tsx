@@ -14,7 +14,7 @@ export function CTAButton({ children, variant = 'primary', className = '', ...pr
 
   return (
     <a
-      className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-sm font-extrabold transition duration-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 ${variants[variant]} ${className}`}
+      className={`inline-flex min-h-12 min-w-0 items-center justify-center gap-2 rounded-full px-6 text-center text-sm font-extrabold transition duration-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 ${variants[variant]} ${className}`}
       {...props}
     >
       {children}

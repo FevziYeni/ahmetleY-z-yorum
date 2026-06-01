@@ -13,7 +13,7 @@ export function Logo({ compact = false, inverted = false }: LogoProps) {
       <img
         src={compact ? '/favicon.png' : '/images/logo.png'}
         alt="Ahmet Onur Yüzme Hocası logosu"
-        className={compact ? 'h-11 w-11 object-contain' : 'h-12 w-auto max-w-[205px] object-contain sm:h-14 sm:max-w-[260px]'}
+        className={compact ? 'h-11 w-11 object-contain' : 'h-10 w-auto max-w-[150px] object-contain sm:h-14 sm:max-w-[260px]'}
       />
     </a>
   );

@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-cyan-100 bg-white/90 backdrop-blur">
-      <div className="relative mx-auto flex max-w-7xl items-center justify-between px-5 py-4 pr-20 lg:px-8">
+      <div className="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-4 pr-16 sm:px-5 sm:pr-20 lg:px-8">
         <Logo />
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Ana menü">
           {navItems.map((item) => (

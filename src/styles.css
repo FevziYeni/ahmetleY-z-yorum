@@ -7,15 +7,25 @@
   scroll-behavior: smooth;
 }
 
+html,
 body {
   margin: 0;
   min-width: 320px;
+  max-width: 100%;
   background: #ffffff;
   overflow-x: hidden;
 }
 
 #root {
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 ::selection {
