@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.*
+.DS_Store
+.localappdata
+.corepack
+.yarn-cache
+dev-server*.log
+dev-server.pid
