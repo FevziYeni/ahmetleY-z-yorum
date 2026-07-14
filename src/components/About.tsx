@@ -15,9 +15,9 @@ export function About() {
         <div className="mt-14 grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="overflow-hidden rounded-lg bg-cyan-950 text-white shadow-soft">
             <img
-              src="/images/swim-lesson-hero.png"
-              alt="Ahmet Onur yüzme hocası özel ders havuz atmosferi"
-              className="h-64 w-full object-cover opacity-85"
+              src="/images/gallery/coach-mba.jpg"
+              alt="Ahmet Onur yüzme hocası havuz başında"
+              className="h-80 w-full object-cover object-[50%_18%] opacity-90"
             />
             <div className="p-7">
               <p className="text-sm font-extrabold uppercase tracking-wide text-cyan-200">Kişisel marka</p>

@@ -1,14 +1,18 @@
 import { Menu, MessageCircle, X } from 'lucide-react';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { contact } from '../data/siteContent';
 import { Logo } from './Logo';
 
 const navItems = [
-  { label: 'Ana Sayfa', href: '#ana-sayfa' },
-  { label: 'Hakkımda', href: '#hakkimda' },
-  { label: 'Dersler', href: '#yuzme-dersleri' },
-  { label: 'SSS', href: '#sss' },
-  { label: 'İletişim', href: '#iletisim' },
+  { label: 'Ana Sayfa', to: '/' },
+  { label: 'Hakkımda', to: '/hakkimda' },
+  { label: 'Dersler', to: '/yuzme-dersleri' },
+  { label: 'İstanbul', to: '/istanbul-yuzme-dersi' },
+  { label: 'Havuzlar', to: '/havuzlar' },
+  { label: 'Galeri', to: '/galeri' },
+  { label: 'SSS', to: '/sss' },
+  { label: 'İletişim', to: '/iletisim' },
 ];
 
 export function Header() {
@@ -18,11 +22,17 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-cyan-100 bg-white/90 backdrop-blur">
       <div className="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-4 pr-16 sm:px-5 sm:pr-20 lg:px-8">
         <Logo />
-        <nav className="hidden items-center gap-7 lg:flex" aria-label="Ana menü">
+        <nav className="hidden items-center gap-5 lg:flex" aria-label="Ana menü">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className="text-sm font-bold text-slate-700 transition hover:text-cyan-700">
+            <NavLink
+              key={item.to}
+              to={item.to}
+              className={({ isActive }) =>
+                `text-sm font-bold transition hover:text-cyan-700 ${isActive ? 'text-cyan-700' : 'text-slate-700'}`
+              }
+            >
               {item.label}
-            </a>
+            </NavLink>
           ))}
         </nav>
         <a
@@ -46,14 +56,18 @@ export function Header() {
         <div className="border-t border-cyan-100 bg-white px-5 py-4 lg:hidden">
           <nav className="mx-auto grid max-w-7xl gap-2" aria-label="Mobil menü">
             {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
+              <NavLink
+                key={item.to}
+                to={item.to}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3 text-sm font-bold text-slate-700 hover:bg-cyan-50 hover:text-cyan-800"
+                className={({ isActive }) =>
+                  `rounded-lg px-3 py-3 text-sm font-bold hover:bg-cyan-50 hover:text-cyan-800 ${
+                    isActive ? 'bg-cyan-50 text-cyan-800' : 'text-slate-700'
+                  }`
+                }
               >
                 {item.label}
-              </a>
+              </NavLink>
             ))}
           </nav>
         </div>

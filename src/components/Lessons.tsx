@@ -28,7 +28,7 @@ export function Lessons() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <CTAButton href="#iletisim">Ücretsiz Ön Görüşme Yap</CTAButton>
+          <CTAButton href="/iletisim">Ücretsiz Ön Görüşme Yap</CTAButton>
         </div>
       </div>
     </section>

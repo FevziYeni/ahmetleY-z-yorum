@@ -11,6 +11,7 @@ import {
   ShieldCheck,
   Target,
   UserRound,
+  UsersRound,
   Waves,
 } from 'lucide-react';
 
@@ -125,4 +126,124 @@ export const quickTrustItems = [
   { label: 'İstanbul hizmet bölgesi', icon: Compass },
   { label: 'Esnek ders planlaması', icon: Clock3 },
   { label: 'Hızlı iletişim', icon: Phone },
+];
+
+export const trainingFormats = [
+  {
+    title: 'Bireysel Yüzme Dersleri',
+    description:
+      'Öğrencinin seviyesine, suya alışkanlığına ve hedeflerine göre tamamen kişiye özel ilerleyen birebir dersler.',
+    image: '/images/gallery/baby-private-lesson.jpg',
+    alt: 'Ahmet Onur ile bireysel çocuk yüzme dersi',
+    icon: UserRound,
+    tags: ['Birebir takip', 'Güvenli başlangıç', 'Hızlı ilerleme'],
+  },
+  {
+    title: 'Grup Derslerimiz',
+    description:
+      'Çocukların motivasyonunu artıran, sosyal etkileşimi destekleyen ve kontrollü kulvar düzeninde yapılan grup çalışmaları.',
+    image: '/images/gallery/group-children-mba.jpg',
+    alt: 'Çocuklar için grup yüzme dersi',
+    icon: UsersRound,
+    tags: ['Çocuk grupları', 'Kulvar düzeni', 'Motivasyon'],
+  },
+  {
+    title: 'Teknik Gelişim ve Kondisyon',
+    description:
+      'Nefes, ayak vuruşu, su pozisyonu, dayanıklılık ve stil tekniğini geliştirmeye yönelik hedefli çalışmalar.',
+    image: '/images/gallery/adult-technique-york.jpg',
+    alt: 'Yetişkin ve teknik gelişim yüzme çalışması',
+    icon: Waves,
+    tags: ['Teknik analiz', 'Dayanıklılık', 'Stil gelişimi'],
+  },
+];
+
+export const lessonLocations = [
+  {
+    name: 'Elitegarden Başakşehir',
+    region: 'Başakşehir',
+    image: '/images/gallery/elitegarden-basaksehir.jpg',
+    alt: 'Elitegarden Başakşehir kapalı yüzme havuzu',
+    note: 'Sakin, kontrollü ve özel derslere uygun kapalı havuz ortamı.',
+  },
+  {
+    name: 'York Athletic Club',
+    region: 'İstanbul',
+    image: '/images/gallery/york-athletic-club.jpg',
+    alt: 'York Athletic Club yüzme havuzu',
+    note: 'Çocuk ve yetişkin dersleri için düzenli kullanılan kulvarlı havuz.',
+  },
+  {
+    name: 'Birikim Okulları Başakşehir Kampüsü',
+    region: 'Başakşehir',
+    image: '/images/gallery/birikim-basaksehir.jpg',
+    alt: 'Birikim Okulları Başakşehir Kampüsü havuzu',
+    note: 'Başlangıç ve teknik gelişim çalışmaları için uygun eğitim alanı.',
+  },
+  {
+    name: 'Era Koleji Florya',
+    region: 'Florya',
+    image: '/images/gallery/era-koleji-florya.jpg',
+    alt: 'Era Koleji Florya yüzme havuzu',
+    note: 'Kulvar çalışmaları ve teknik eğitim için temiz, düzenli havuz ortamı.',
+  },
+];
+
+export const galleryImages = [
+  {
+    src: '/images/gallery/coach-mba.jpg',
+    alt: 'Ahmet Onur yüzme hocası havuz başında',
+    title: 'Profesyonel Eğitim Ortamı',
+    category: 'Eğitmen',
+    featured: true,
+  },
+  {
+    src: '/images/gallery/child-technique-board.jpg',
+    alt: 'Çocuk yüzme dersinde teknik tahta çalışması',
+    title: 'Teknik Destekli Çalışma',
+    category: 'Çocuk dersi',
+  },
+  {
+    src: '/images/gallery/underwater-child.jpg',
+    alt: 'Su altında rahat hareket eden çocuk öğrenci',
+    title: 'Suya Güven Kazanımı',
+    category: 'Başlangıç',
+  },
+  {
+    src: '/images/gallery/child-confidence-pool.jpg',
+    alt: 'Havuz kenarında mutlu çocuk yüzücü',
+    title: 'Çocuklarda Özgüven',
+    category: 'Çocuk dersi',
+  },
+  {
+    src: '/images/gallery/baby-private-lane.jpg',
+    alt: 'Birebir bebek ve çocuk yüzme dersi',
+    title: 'Birebir Yaklaşım',
+    category: 'Özel ders',
+  },
+  {
+    src: '/images/gallery/york-family-lesson.jpg',
+    alt: 'York Athletic Club havuzunda aile ve çocuk yüzme dersi',
+    title: 'Aile Katılımlı Eğitim',
+    category: 'Özel ders',
+  },
+  {
+    src: '/images/gallery/pool-training-lane.jpg',
+    alt: 'Kulvar içinde yüzme teknik çalışması',
+    title: 'Kulvar Çalışmaları',
+    category: 'Teknik gelişim',
+  },
+  {
+    src: '/images/gallery/student-progress-collage.jpg',
+    alt: 'Yüzme derslerinden öğrenci gelişim kolajı',
+    title: 'Gelişim Anları',
+    category: 'Galeri',
+  },
+];
+
+export const galleryHighlights = [
+  { value: '4+', label: 'aktif ders havuzu' },
+  { value: 'Birebir & Grup', label: 'esnek ders formatı' },
+  { value: 'Çocuk Odaklı', label: 'güvenli ve sabırlı yaklaşım' },
+  { value: 'Teknik Takip', label: 'hedefe yönelik gelişim' },
 ];

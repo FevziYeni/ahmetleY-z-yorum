@@ -9,7 +9,7 @@ const contactCards = [
   { label: 'WhatsApp', value: 'WhatsApp ile bilgi al', href: `https://wa.me/${contact.whatsapp}`, icon: MessageCircle },
   { label: 'E-posta', value: contact.email, href: `mailto:${contact.email}`, icon: Mail },
   { label: 'Instagram', value: contact.instagram, href: contact.instagramUrl, icon: Instagram },
-  { label: 'Hizmet Bölgesi', value: contact.region, href: '#iletisim', icon: MapPin },
+  { label: 'Hizmet Bölgesi', value: contact.region, href: '/havuzlar', icon: MapPin },
 ];
 
 function createWhatsAppUrl(form: HTMLFormElement) {

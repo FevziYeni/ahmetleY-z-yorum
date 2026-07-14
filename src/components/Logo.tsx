@@ -6,7 +6,7 @@ type LogoProps = {
 export function Logo({ compact = false, inverted = false }: LogoProps) {
   return (
     <a
-      href="#ana-sayfa"
+      href="/"
       className={`inline-flex items-center ${inverted ? 'rounded-lg bg-white px-4 py-3 shadow-soft' : ''}`}
       aria-label="Ahmet Onur Yüzme Hocası ana sayfa"
     >

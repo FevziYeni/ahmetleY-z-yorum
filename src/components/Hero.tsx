@@ -15,25 +15,25 @@ export function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-white to-transparent" />
       </div>
 
-      <div className="mx-auto grid min-h-[calc(100vh-81px)] max-w-7xl items-center px-5 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
-        <div className="max-w-3xl">
+      <div className="mx-auto grid min-h-[calc(100vh-81px)] w-full min-w-0 max-w-7xl grid-cols-[minmax(0,1fr)] items-center px-5 py-16 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:px-8">
+        <div className="w-full min-w-0 max-w-[calc(100vw-2.5rem)] sm:max-w-3xl">
           <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-cyan-200 bg-white/85 px-4 py-2 text-xs font-extrabold text-cyan-900 shadow-sm sm:text-sm">
             <Star className="h-4 w-4 fill-cyan-500 text-cyan-500" />
             <span>Ahmet Onur ile profesyonel yüzme eğitimi</span>
           </div>
-          <h1 className="mt-7 max-w-full break-words text-3xl font-black leading-tight text-slate-950 sm:max-w-4xl sm:text-5xl lg:text-6xl">
-            Profesyonel Yüzme Eğitimi ile güvenle suya adım atın.
+          <h1 className="mt-7 max-w-full break-words text-2xl font-black leading-tight text-slate-950 min-[360px]:text-3xl sm:max-w-4xl sm:text-5xl lg:text-6xl">
+            Profesyonel Yüzme <span className="block">Eğitimi ile güvenle suya adım atın.</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+          <p className="mt-6 max-w-2xl break-words text-lg leading-8 text-slate-700">
             Ahmet Onur yüzme hocası olarak çocuk, yetişkin ve başlangıç seviyesindeki öğrenciler için
             birebir yüzme dersi, özel yüzme dersi ve teknik geliştirme programları sunar.
           </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <CTAButton href="#iletisim">
+          <div className="mt-9 flex min-w-0 flex-col gap-3 sm:flex-row">
+            <CTAButton href="/iletisim" className="w-full sm:w-auto">
               Hemen Ders Al
               <ArrowRight className="h-4 w-4" />
             </CTAButton>
-            <CTAButton href={`https://wa.me/${contact.whatsapp}`} variant="secondary">
+            <CTAButton href={`https://wa.me/${contact.whatsapp}`} variant="secondary" className="w-full sm:w-auto">
               <MessageCircle className="h-4 w-4" />
               WhatsApp'tan Bilgi Al
             </CTAButton>
