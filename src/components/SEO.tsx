@@ -7,7 +7,7 @@ type SEOProps = {
   keywords?: string;
 };
 
-const siteUrl = 'https://ahmetle-y-z-yorum.vercel.app';
+const siteUrl = 'https://xn--ahmetonuryzmeakademisi-1lc.com';
 
 function setMeta(name: string, content: string, attribute: 'name' | 'property' = 'name') {
   let element = document.head.querySelector<HTMLMetaElement>(`meta[${attribute}="${name}"]`);

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ahmetle-y-z-yorum.vercel.app/sitemap.xml
+Sitemap: https://xn--ahmetonuryzmeakademisi-1lc.com/sitemap.xml
